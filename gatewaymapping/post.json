@@ -1,0 +1,7 @@
+{
+  "age": $input.json("$.age"),
+  "height": $input.json("$.height"),
+  "income": $input.json("$.income"),
+  "userId": "$context.authorizer.claims.sub",
+  "apiGWId": "$context.authorizer.principalId"
+}
